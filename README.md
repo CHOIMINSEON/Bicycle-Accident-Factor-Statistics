@@ -70,6 +70,7 @@ Bicycle-Accident-Factor-Statistics/
 
 ### 3. 분석 결과
 <img width="586" height="362" alt="다중회귀분석2" src="https://github.com/user-attachments/assets/02dd2ae4-9286-460b-a321-57f4ff1a8701" />
+
 - 생활인구가 많을수록 자전거 교통사고 발생이 증가하는 경향 (p < 0.05)
 - 자전거도로 개수는 교통사고와 양의 상관관계를 보임 (p < 0.05)
 - 공공자전거 이용 횟수는 교통사고와 유의미한 관계를 나타냄 (p < 0.01)
