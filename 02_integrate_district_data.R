@@ -4,7 +4,7 @@ library(corrplot)
 install.packages("RColorBrewer")
 library(RColorBrewer)
 
-setwd("C:/Users/choi/Desktop/data")
+setwd("data")
 load("cor_data.RData")
 
 ## 데이터 가공 ####
@@ -26,7 +26,7 @@ do.leng <- as.data.frame(do.leng)
 do.num <- read_excel(dd[4])
 do.num <- as.data.frame(do.num)
 
-setwd("C:/Users/choi/Desktop/data/event")
+setwd("event")
 dd <- list.files()
 event.ga <- read_excel(dd[2])
 event.ga <- as.data.frame(event.ga)
@@ -354,7 +354,7 @@ lm.gu1 <- lm(event.ga ~ count + length + number, data = gu.1)
 summary(lm.gu1)
 
 ##2022회귀분석##
-setwd("D:/minseon/go/data_new/완성파일")
+setwd("/완성파일")
 event_life <- read.csv("event_life.csv")
 plot(event~life,data=event_life)
 lmfit=lm(event~life,data=event_life)
@@ -376,7 +376,7 @@ install.packages("data.table")
 library(data.table)
 
 # 파일이 저장된 폴더 경로
-folder_path <- "D:/minseon/go/data_new/완성파일/gu"
+folder_path <- "/gu"
 
 # 파일 개수와 이름에 따라 반복하여 데이터프레임 생성 및 저장
 for (i in 1:25) {
@@ -422,7 +422,7 @@ all.cor <- left_join(cor.gu, gu, by = "code")
 #파일출력
 install.packages("openxlsx")
 library(openxlsx)
-write.xlsx(cor.gu, file = "D:/minseon/go/data_new/완성파일/상관관계_수정.xlsx")
+write.xlsx(cor.gu, file = "상관관계_수정.xlsx")
 
 ## 상관관계 그래프 맵
 x <- cor(gu18[, c(1, 2, 3, 6)])
@@ -435,34 +435,35 @@ y$estimate
 y$p.value
 
 ## 데이터 csv 저장
-write.csv(gu1, file = "C:/Users/choi/Desktop/data/result/gu1.csv")
-write.csv(gu2, file = "C:/Users/choi/Desktop/data/result/gu2.csv")
-write.csv(gu3, file = "C:/Users/choi/Desktop/data/result/gu3.csv")
-write.csv(gu4, file = "C:/Users/choi/Desktop/data/result/gu4.csv")
-write.csv(gu5, file = "C:/Users/choi/Desktop/data/result/gu5.csv")
-write.csv(gu6, file = "C:/Users/choi/Desktop/data/result/gu6.csv")
-write.csv(gu7, file = "C:/Users/choi/Desktop/data/result/gu7.csv")
-write.csv(gu8, file = "C:/Users/choi/Desktop/data/result/gu8.csv")
-write.csv(gu9, file = "C:/Users/choi/Desktop/data/result/gu9.csv")
-write.csv(gu10, file = "C:/Users/choi/Desktop/data/result/gu10.csv")
-write.csv(gu11, file = "C:/Users/choi/Desktop/data/result/gu11.csv")
-write.csv(gu12, file = "C:/Users/choi/Desktop/data/result/gu12.csv")
-write.csv(gu13, file = "C:/Users/choi/Desktop/data/result/gu13.csv")
-write.csv(gu14, file = "C:/Users/choi/Desktop/data/result/gu14.csv")
-write.csv(gu15, file = "C:/Users/choi/Desktop/data/result/gu15.csv")
-write.csv(gu16, file = "C:/Users/choi/Desktop/data/result/gu16.csv")
-write.csv(gu17, file = "C:/Users/choi/Desktop/data/result/gu17.csv")
-write.csv(gu18, file = "C:/Users/choi/Desktop/data/result/gu18.csv")
-write.csv(gu19, file = "C:/Users/choi/Desktop/data/result/gu19.csv")
-write.csv(gu20, file = "C:/Users/choi/Desktop/data/result/gu20.csv")
-write.csv(gu21, file = "C:/Users/choi/Desktop/data/result/gu21.csv")
-write.csv(gu22, file = "C:/Users/choi/Desktop/data/result/gu22.csv")
-write.csv(gu23, file = "C:/Users/choi/Desktop/data/result/gu23.csv")
-write.csv(gu24, file = "C:/Users/choi/Desktop/data/result/gu24.csv")
-write.csv(gu25, file = "C:/Users/choi/Desktop/data/result/gu25.csv")
+write.csv(gu1, file = "gu1.csv")
+write.csv(gu2, file = "gu2.csv")
+write.csv(gu3, file = "gu3.csv")
+write.csv(gu4, file = "gu4.csv")
+write.csv(gu5, file = "gu5.csv")
+write.csv(gu6, file = "gu6.csv")
+write.csv(gu7, file = "gu7.csv")
+write.csv(gu8, file = "gu8.csv")
+write.csv(gu9, file = "gu9.csv")
+write.csv(gu10, file = "gu10.csv")
+write.csv(gu11, file = "gu11.csv")
+write.csv(gu12, file = "gu12.csv")
+write.csv(gu13, file = "gu13.csv")
+write.csv(gu14, file = "gu14.csv")
+write.csv(gu15, file = "gu15.csv")
+write.csv(gu16, file = "gu16.csv")
+write.csv(gu17, file = "gu17.csv")
+write.csv(gu18, file = "gu18.csv")
+write.csv(gu19, file = "gu19.csv")
+write.csv(gu20, file = "gu20.csv")
+write.csv(gu21, file = "gu21.csv")
+write.csv(gu22, file = "gu22.csv")
+write.csv(gu23, file = "gu23.csv")
+write.csv(gu24, file = "gu24.csv")
+write.csv(gu25, file = "gu25.csv")
 
-write.csv(event.ga, file = "C:/Users/choi/Desktop/data/result/event.ga.csv", fileEncoding = "cp949")
-write.csv(event.pi, file = "C:/Users/choi/Desktop/data/result/event.pi.csv", fileEncoding = "cp949")
-write.csv(do.leng, file = "C:/Users/choi/Desktop/data/result/do.leng.csv", fileEncoding = "cp949")
+write.csv(event.ga, file = "event.ga.csv", fileEncoding = "cp949")
+write.csv(event.pi, file = "event.pi.csv", fileEncoding = "cp949")
+write.csv(do.leng, file = "do.leng.csv", fileEncoding = "cp949")
 
-write.csv(all.cor, file = "C:/Users/choi/Desktop/data/result/cor.csv", fileEncoding = "cp949")
+write.csv(all.cor, file = "cor.csv", fileEncoding = "cp949")
+
