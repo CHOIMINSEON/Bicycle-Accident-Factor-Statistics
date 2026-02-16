@@ -1,4 +1,4 @@
-setwd("C:/Users/choi/Desktop/data")
+setwd("data")
 list.files()
 use1 <- list.files("csv/")
 use2 <- list.files("use/")
@@ -308,3 +308,4 @@ write.csv(count_2018, file = "count_2018.csv")
 write.csv(count_2019, file = "count_2019.csv")
 write.csv(count_2020, file = "count_2020.csv")
 write.csv(count_2021, file = "count_2021.csv")
+
