@@ -1,2 +1,2 @@
-# Exploring-the-Relationship-between-Bicycle-Accidents-and-Cycling-Infrastructure
-Conduct a statistical analysis on the relationship between the number of bicycle accidents in Seoul and potential influencing factors (public bicycles, bicycle lanes, and floating population).
+# 자전거 교통사고와 자전거 관련 인프라의 관계성 탐색(2023)
+* 서울시 자전거 교통사고 수와 사고에 영향을 미칠 수 있는 요인(공공자전거, 자전거도로, 유동인구) 간의 통계 분석을 진행
