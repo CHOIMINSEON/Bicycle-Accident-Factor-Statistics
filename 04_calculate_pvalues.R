@@ -42,7 +42,7 @@ print(p_value_results_df)
 #파일출력
 install.packages("openxlsx")
 library(openxlsx)
-write.xlsx(cor.gu, file = "D:/minseon/go/data_new/완성파일/상관관계_수정_p.xlsx")
+write.xlsx(cor.gu, file = "상관관계_수정_p.xlsx")
 
 ## 상관관계 그래프 맵
 x <- cor(gu18[, c(1, 2, 3, 6)])
@@ -70,3 +70,4 @@ y$p.value
 y <- cor.test(gu1[,2], gu1[,6])
 y$estimate
 y$p.value
+
